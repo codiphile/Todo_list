@@ -1,0 +1,11 @@
+create database todolist;
+
+use todolist;
+//if the task table is already created then use ---> drop table tasks;
+
+CREATE TABLE tasks (
+    ->     id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     task_name VARCHAR(255) NOT NULL,
+    ->     description VARCHAR(255),
+    ->     is_completed BOOLEAN DEFAULT FALSE
+    -> );
